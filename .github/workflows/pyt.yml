@@ -1,10 +1,11 @@
+name: Github Actions Example
 
-    branches: [ main ]name: Github Actions Example
+on:
   pull_request:
   push:
     branches: 
       - master
-      - second
+      - develop
 
 jobs:
   test:
@@ -21,4 +22,3 @@ jobs:
       run: npm install
     - name: Test
       run: npm test
-
